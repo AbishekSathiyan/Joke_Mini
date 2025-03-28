@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensure box sizing is consistent */
+}
+
+body {
+  font-family: 'Winky Sans', sans-serif; /* Apply Winky Sans font */
+  margin: 0;
+  padding: 0;
+  background-color: #2c3e50; /* Dark background to create contrast */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Title Styling */
+h1 {
+  font-family: 'Winky Sans', sans-serif; /* Use Winky Sans font */
+  color: #ff6347; /* Bright color for title */
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  word-wrap: break-word;
+}
+
+/* Button Styling */
+button {
+  font-family: 'Winky Sans', sans-serif; /* Use Winky Sans font */
+  width: 100%;
+  background-color: #ff6347; /* Bright button color */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #e53e3e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Select dropdown */
+select {
+  font-family: 'Winky Sans', sans-serif; /* Use Winky Sans font */
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+select:hover {
+  background-color: #ff9900;
+  transform: scale(1.05);
+}
+
+select:focus {
+  outline: none;
+  border-color: #ff6347;
+  box-shadow: 0 0 8px rgba(255, 99, 71, 0.6);
+}
+
+/* Content Box Styling */
+.content-box {
+  background-color: #ffffff; /* White content box for contrast */
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.content-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Developer Info Section */
+.developer-info {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.developer-info h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.developer-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+
+.developer-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.developer-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.social-links a:hover {
+  color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-box {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  button {
+    padding: 14px;
+  }
+
+  select {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 12px;
+  }
+
+  select {
+    font-size: 1rem;
+  }
+
+  .developer-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .developer-image {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-box {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 12px;
+  }
+
+  select {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px; /* Reduced padding */
+  }
+
+  .content-box {
+    padding: 15px;
+    width: 100%; /* Ensure it fills the container */
+  }
+
+  h1 {
+    font-size: 1.4rem; /* Make title slightly smaller */
+  }
+
+  button {
+    padding: 10px; /* Make button padding smaller */
+    width: 100%; /* Ensure buttons span full width */
+  }
+
+  select {
+    font-size: 0.9rem; /* Adjust select box font size */
+    padding: 8px;
+    width: 100%; /* Ensure the select box takes up the full width */
+  }
+
+  .developer-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text for small screens */
+  }
+
+  .developer-image {
+    margin-bottom: 10px; /* Reduce space between profile image and text */
+  }
+
+  .developer-info {
+    padding: 12px; /* Slightly reduced padding */
+  }
+}
