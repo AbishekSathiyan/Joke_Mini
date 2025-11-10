@@ -1,6 +1,3 @@
-Here's a `README.md` template for your project, describing the key elements, usage instructions, and additional details for your CSS-based web project.
-
-```markdown
 # Responsive Web UI with Winky Sans Font
 
 This is a responsive web UI design created using HTML and CSS, featuring the "Winky Sans" font from Google Fonts. The design is intended to be mobile-first and responsive across different screen sizes, ensuring a seamless user experience on both small and large devices.
